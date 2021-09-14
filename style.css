@@ -1,0 +1,172 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.puppygram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.puppygram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+
+.puppygram-phone img {
+  height: 45rem;
+}
+
+.puppygram-continue {
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: space-around; /* vertical */
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  min-height: 34rem;
+  margin-left: 2rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 1rem 0;
+  border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.puppygram-logo {
+  height: 4rem;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.puppygram-login {
+  background-color: rgb(0, 149, 246);
+  color: #FFFFFF;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.puppygram-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('./img/googleplay-button.png')
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: rgb(243, 243, 243);
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.about {
+  margin-right: 3rem;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .puppygram-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #FFFFFF;
+  }
+  .puppygram-wrapper {
+    width: 90%
+  }
+  .puppygram-phone {
+    display: none;
+  }
+  .puppygram-continue {
+    width: 100%
+  }
+  .group {
+    border: 1px solid transparent;
+  }
+}
